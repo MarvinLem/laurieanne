@@ -1,0 +1,660 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Fin du reset*/
+
+/* Font */
+
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('../fonts/cocogothic_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogothic_trial-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('../fonts/cocogothic-bold_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogothic-bold_trial-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('../fonts/cocogothic-bolditalic_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogothic-bolditalic_trial-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('../fonts/cocogothic-italic_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogothic-italic_trial-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('../fonts/cocogothic-light_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogothic-light_trial-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+/* General */
+
+body{
+    font-family: sans-serif, 'Coco Gothic';
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    width:100%;
+    margin:0 auto;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+
+/* HEADER */
+
+header{
+    width:100%
+}
+
+header nav{
+    min-height: 100px;
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+header a{
+    color: #9F855A;
+    text-decoration: none;
+    text-align: center;
+    padding: 42px 14px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+header label{
+    display: inline-block;
+    width: 110px;
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    padding: 42px 10px;
+}
+
+header input{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+header a:hover{
+    color: #8A1717;
+    text-decoration: underline;
+}
+
+header div img{
+    border-top: grey 1px solid;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+header a#Logo{
+    padding: 0;
+}
+
+header a#accueil{
+    font-weight: 700;
+}
+
+/* MAIN */
+
+h2{
+    color: #9F855A;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+h3, p#Date{
+    color: #8A1717;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p#Date{
+    font-style: italic;
+}
+
+p#Expo{
+    min-height: 196px;
+}
+
+main p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+section.expo{
+    padding:50px 10%;
+}
+
+div.main-expo{
+    min-height: 400px;
+    margin-bottom: 40px;
+}
+
+div.main-expo-right{
+    width:46%;
+}
+
+div.main-expo-left{
+    width:50%;
+    margin-right:40px;
+}
+
+div.main-expo img{
+    width:100%;
+}
+
+aside.about{
+    width:40%;
+    margin-bottom: 60px;
+    padding-left: 10%;
+    margin-top: 50px;
+}
+
+aside img{
+    width: 50%;
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+aside p{
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+aside a.button{
+    font-size: 24px;
+    position: relative;
+    bottom: 30px;
+}
+
+section.instagram{
+    float: right;
+    width: 40%;
+    padding-right: 10%;
+    margin-top: 50px;
+}
+
+section.instagram img{
+    width: 47.1%;
+    margin-bottom: 30px;
+}
+
+section.instagram img.leftimage{
+    margin-right:30px;
+}
+
+section.instagram a.button{
+    font-size: 24px;
+    padding: 15px 34px;
+    margin-left: 321px;
+    width:216px;
+}
+
+a.button{
+    border: 1px #9F855A solid;
+    padding: 20px;
+    font-size: 26px;
+    color: #9F855A;
+    text-decoration: none;
+    vertical-align: baseline;
+    display: inline-block;
+    background-color: white;
+}
+
+a.button:hover{
+    color: #8A1717;
+    border: 1px #8A1717 solid;
+    text-decoration: underline;
+}
+
+section.works h3{
+    font-size: 32px;
+}
+
+section.works{
+    margin-bottom: 50px;
+    background-color: #EFEFEF;
+    background-size: cover;
+    padding: 50px 10%;
+}
+
+section.works section.projet-main{
+    margin-bottom: 100px;
+}
+
+section.works a.button{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+section.works img{
+    margin-bottom: 30px;
+}
+
+div#right-div{
+    margin-right: 0;
+}
+
+section.works div{
+    width:29.7%;
+    display: inline-block;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+section.works div img{
+    width: 100%;
+}
+
+/* EXPOSITIONS */
+
+section.expo:nth-child(2n){
+    background-color: #EFEFEF;
+}
+
+/* PROFFESIONNELS */
+
+section.proffesionnels{
+    width:100%;
+}
+
+section.proffesionnels h2{
+    margin-left: 10%;
+    margin-bottom: -10px;
+}
+
+section.projet-main{
+    width:80%;
+    padding: 50px 10%;
+}
+
+section.projet-main:nth-child(2n+1){
+    background-color: #EFEFEF;
+}
+
+div.projet{
+    min-height: 440px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+div.projet p{
+    min-height: 244px;
+}
+
+div.projet h3{
+    font-size: 30px;
+}
+
+div.projet a.button{
+    vertical-align: baseline;
+}
+
+div.projet img{
+    width: 95%;
+    display:block;
+}
+
+div.projet.bottom{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div.bottom img{
+    width:31.4%;
+    display: inline-block;
+}
+
+div.bottom img.leftimage{
+    margin-right: 30px;
+}
+
+section.works{
+    margin-bottom: 0;
+}
+
+section.works h2{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+/* PARTICULIERS */
+
+section.particuliers{
+    width: 100%;
+}
+
+section.particuliers h2{
+    margin-left: 10%;
+    margin-bottom: -10px;
+}
+
+section.particuliers section.projet-main{
+    margin-bottom: 30px;
+    width: 80%;
+    padding: 50px 10%;
+}
+
+section.particuliers section.projet-main h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section.particuliers section.projet-main img{
+    width: 31.4%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+section.particuliers section.projet-main p{
+    width: 65.7%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+section.particuliers section.projet-main a{
+    margin-left: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+section.particuliers section.projet-main img.leftimage{
+    margin-right: 30px;
+}
+
+section.works{
+    margin-bottom: 0;
+}
+
+section.works h2{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+/* ARTISTIQUE */
+
+section.artistiques{
+    width: 100%;
+}
+
+section.artistiques section.projet-main{
+    margin-bottom: 30px;
+    width: 80%;
+    padding: 50px 10%;
+}
+
+section.artistiques h2{
+    margin-left: 10%;
+    margin-bottom: -10px;
+}
+
+section.artistiques section.projet-main h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section.artistiques section.projet-main img{
+    width: 31.4%;
+    display: inline-block;
+}
+
+section.artistiques section.projet-main div{
+    display: inline-block;
+    width:29.7%;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+
+section.artistiques a{
+    margin: 0 auto;
+    width: 165px;
+    display:block;
+}
+
+section.works{
+    margin-bottom: 0;
+}
+
+section.works h2{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+section.works a{
+    display: inline-block;
+    background-color: white;
+    width: auto;
+}
+
+section.artistiques section.works div{
+    width:29.7%;
+}
+
+/* ABOUT */
+
+section.apropos{
+    width:80%;
+    padding:0 10% 50px;
+}
+section.apropos div{
+    width:26%;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+div.righte{
+    vertical-align: top;
+}
+
+section.apropos div img{
+    margin-bottom: 20px;
+}
+
+section.apropos a.button{
+    padding: 15px 20px;
+}
+
+section.works{
+    margin-bottom: 0;
+}
+
+section.works h2{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+/* FOOTER */
+
+footer{
+    width:100%;
+    background-color: #9F855A;
+    min-height: 200px;
+}
+
+footer h3{
+    color: #E6E6E6;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p{
+    color: #E6E6E6;
+    text-align: center;
+}
+
+div.social-media{
+    width: 50%;
+    float:left;
+    min-height: 100px;
+    margin-top: 50px;
+}
+
+div.icons{
+    width: 34%;
+    margin: 0 auto;
+}
+
+div.icons img{
+    margin: 10px;
+}
+
+div.contact{
+    width: 50%;
+    float: right;
+    min-height: 100px;
+    margin-top: 50px;
+}
+
+footer a.button{
+    border: 1px #E6E6E6 solid;
+    padding: 15px 30px;
+    margin-left: 265px;
+    font-size: 24px;
+    color: #E6E6E6;
+    text-decoration: none;
+    vertical-align: baseline;
+    display: inline-block;
+    background-color: #9F855A;
+}
+
+/* FORMULAIRE */
+h2.contact{
+margin-left: 10%;
+}
+
+form{
+    min-height: 350px;
+    width: 80%;
+    padding: 10px 10%;
+}
+
+fieldset{
+    width:40%;
+    float:left;
+}
+
+.right{
+    float: right;
+}
+
+label{
+    color: #8A1717;
+    font-size: 20px;
+    font-style: italic;
+    display: inline-block;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+input,textarea{
+    padding: 10px 80px 10px 10px;
+    border: 1px #9F855A solid;
+    margin-bottom: 30px;
+}
+legend{
+    color: #8A1717;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 50%;
+    min-height: 115px;
+    resize: none;
+}
+input[type="submit"]{
+    border: 1px #9F855A solid;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #9F855A;
+    text-decoration: none;
+    vertical-align: baseline;
+    background-color: white;
+    top: 45px;
+    right: 125px;
+    position: relative;
+}
+
+input[type="submit"]:hover{
+    color: #8A1717;
+    border: 1px #8A1717 solid;
+    text-decoration: underline;
+}
